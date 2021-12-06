@@ -14,15 +14,21 @@ const forecast = (lat, long, callback) => {
     } else if (body.error) {
       callback('Unable to find location', undefined);
     } else {
+      // console.log(body);
       const actualTemp = body.current.temperature;
       const feelsLikeTemp = body.current.feelslike;
+      const humidity = body.current.humidity;
+
       callback(
         undefined,
         body.current.weather_descriptions[0] +
           '. Its currently ' +
           actualTemp +
           ' Fah out there. But it feels like ' +
-          feelsLikeTemp
+          feelsLikeTemp +
+          ' and the humidity of ' +
+          humidity +
+          '%.'
       );
     }
   });
