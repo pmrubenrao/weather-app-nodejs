@@ -1,6 +1,6 @@
 # Weather App
 
-This is a simple Weather application using API from the Weather Stack to show the current weather in your location
+This is a simple Weather application using data from the Weather Stack to show the current weather in any location you type in.
 
 ##
 
@@ -16,7 +16,7 @@ This is a simple Weather application using API from the Weather Stack to show th
 
 ## Project setup / Installation
 
-For installing the dependencies required by the VueJs project
+For installing the dependencies required by the project
 
 ```
 npm install
